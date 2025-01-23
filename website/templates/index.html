@@ -1,40 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Sipalingbuku
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
- </head>
- <body class="bg-black text-white">
-  <header class="flex items-center justify-between p-4 bg-black">
-   <div class="flex items-center space-x-4">
-    <img alt="logo" class="h-10" src="{% static 'img/base-logo.png' %}" />
-    <nav class="hidden md:flex space-x-4">
-     <a class="text-white" href="index.html">
-      Beranda
-     </a>
-     <a class="text-white" href="#">
-      Recomendation
-     </a>
-     <form id="search-form">
-        <input type="text" name="search-input" id="search-input" placeholder="Cari Buku....">
-        <button type="submit"><i class="fas fa-search text-white">
-        </i>
-    </button>
-     </form>
-    </nav>
-   </div>
-  </header>
-  <main>
-    <div id="book-list"></div>
-  </main>
-  <script src="{% static 'javascript/request.db.js' %}"></script>
- </body>
+<html lang="en" data-bs-theme= "dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sipalingbuku</title>
+  {% include "snippets/style.html" %}
+</head>
+<body>
+  {% include "snippets/navbar.html" %}
+<main>
+  <div id="myBodyContent">
+    {% include "booklist.html" %}
+  </div>
+</main>
+  {% include "snippets/script.html" %}
+  
+</body>
 </html>
+

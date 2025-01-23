@@ -30,4 +30,3 @@ def search_books(request):
         return JsonResponse(books, safe=False)
     else:
         return JsonResponse({ "error": "Gagal menggambil data"}, status=response.status_code)
-    
