@@ -10,43 +10,42 @@
 
 {% block content %}
 <section class="about" id="myBodyContent">
-    <div class="container">
-        <h1 class="section-title">Tentang Website</h1>
-        <p class="section-subtitle">Website ini dibuat untuk membantu pengguna menemukan dan merekomendasikan buku terbaik.</p>
-
-        <div class="row">
-            <div class="col-md-6">
-                <img src="{% static 'img/base-logo.png' %}" class="img-fluid rounded shadow w-50" alt="Gambar Buku">
+    <div class="container py-5">
+        <h1 class="section-title text-center">Tentang Website</h1>
+        <p class="section-subtitle text-center">Website ini dibuat untuk membantu pengguna menemukan dan merekomendasikan buku terbaik.</p>
+    
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+                <img src="{% static 'img/base-logo.png' %}" class="img-fluid rounded shadow w-75" alt="Gambar Buku">
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <h3>Kenapa Website Ini Dibuat?</h3>
                 <p>Website ini bertujuan untuk mempermudah pencarian buku berdasarkan kategori, memberikan rekomendasi, serta menampilkan informasi detail tentang setiap buku.</p>
-
                 <h3>Fitur Utama:</h3>
-                <ul>
-                    <li>🔍 <strong>Pencarian Buku:</strong> Temukan buku berdasarkan judul atau genre.</li>
-                    <li>📖 <strong>Detail Buku:</strong> Lihat informasi lengkap, termasuk penulis dan deskripsi.</li>
-                    <li>⭐ <strong>Rekomendasi Buku:</strong> Dapatkan rekomendasi berdasarkan genre populer.</li>
-                    <li>📚 <strong>Antarmuka Sederhana:</strong> Navigasi yang mudah digunakan.</li>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">🔍 <strong>Pencarian Buku:</strong> Temukan buku berdasarkan judul atau genre.</li>
+                    <li class="list-group-item">📖 <strong>Detail Buku:</strong> Lihat informasi lengkap, termasuk penulis dan deskripsi.</li>
+                    <li class="list-group-item">⭐ <strong>Rekomendasi Buku:</strong> Dapatkan rekomendasi berdasarkan genre populer.</li>
+                    <li class="list-group-item">📚 <strong>Antarmuka Sederhana:</strong> Navigasi yang mudah digunakan.</li>
                 </ul>
             </div>
         </div>
-
-        <div class="row mt-5">
-            <div class="col-md-6">
+    
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 order-lg-1 order-2">
                 <h3>Teknologi yang Digunakan:</h3>
-                <ul>
-                    <li>⚡ <strong>Django</strong> – Backend & database handling</li>
-                    <li>💻 <strong>Bootstrap</strong> – Untuk tampilan responsif</li>
-                    <li>📡 <strong>Google Books API</strong> – Untuk mengambil data buku</li>
-                    <li>🔗 <strong>JavaScript</strong> – Untuk interaksi pengguna</li>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">⚡ <strong>Django</strong> – Backend & database handling</li>
+                    <li class="list-group-item">💻 <strong>Bootstrap</strong> – Untuk tampilan responsif</li>
+                    <li class="list-group-item">📡 <strong>Google Books API</strong> – Untuk mengambil data buku</li>
+                    <li class="list-group-item">🔗 <strong>JavaScript</strong> – Untuk interaksi pengguna</li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <img src="{% static 'img/logo.png' %}" class="img-fluid rounded shadow" alt="Gambar Teknologi">
+            <div class="col-lg-6 text-center order-lg-2 order-1 mb-4 mb-lg-0">
+                <img src="{% static 'img/logo.png' %}" class="img-fluid rounded shadow w-75" alt="Gambar Teknologi">
             </div>
         </div>
     </div>
-</section>
+    </section>
 {% endblock  %}
     
