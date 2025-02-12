@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block title %}
+    Ourteam
+{% endblock  %}
+    
+{% block body_class %}team-page{% endblock %}
+
+
+{% block content %}
+<section class="team" id="myBodyContent">
+    <div class="container text-center">
+        <h1 class="section-title">OUR TEAM</h1>
+        <p class="section-subtitle">Tim yang bekerja sama untuk membangun website terbaik</p>
+        <div class="row">
+            <!-- Achmad Yusril -->
+            <div class="col-md-3 profile text-center fade-in">
+                <div class="img-box">
+                    <img src="{% static 'img/yusril.jpg' %}" class="img-fluid rounded-circle">
+                    <ul>
+                        <li><a href="https://www.instagram.com/achmad_yusril_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com/@achmadyusril6868?si=EJGLZ53uoERju9Yb"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul> 
+                </div>
+                <h2>Achmad Yusril Al-Amsyah</h2>
+                <h3>Student Ambassador & Public Relations</h3>
+                <p>Mengelola komunikasi tim, membangun jaringan, serta menjadi perwakilan dalam media sosial dan acara.</p>
+            </div>
+
+            <!-- Dandi Sutrisno -->
+            <div class="col-md-3 profile text-center fade-in">
+                <div class="img-box">
+                    <img src="{% static 'img/dandi.jpg' %}" class="img-fluid rounded-circle">
+                    <ul>
+                        <li><a href="https://youtube.com/@danxei37?si=yIm51Y-qelKwVrhn"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul> 
+                </div>
+                <h2>Dandi Sutrisno</h2>
+                <h3>UI/UX Designer</h3>
+                <p>Mendesain antarmuka dan pengalaman pengguna agar website lebih menarik dan mudah digunakan.</p>
+            </div>
+
+            <!-- Sapta Aditya Nugraha -->
+            <div class="col-md-3 profile text-center fade-in">
+                <div class="img-box">
+                    <img src="{% static 'img/sapta.png' %}" class="img-fluid rounded-circle">
+                    <ul>
+                        <li><a href="https://www.instagram.com/its.s4nn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com/@callmesan01?si=7otlxqH34-2O6SJP"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul> 
+                </div>
+                <h2>Sapta Aditya Nugraha</h2>
+                <h3>Technical Writer & Documentation</h3>
+                <p>Menulis dokumentasi teknis dan laporan proyek untuk memastikan pengembangan berjalan terstruktur.</p>
+            </div>
+            
+            <!-- Ahmad Aldo Maulana -->
+            <div class="col-md-3 profile text-center fade-in">
+                <div class="img-box">
+                    <img src="{% static 'img/aldo.png' %}" class="img-fluid rounded-circle">
+                    <ul>
+                        <li><a href="https://www.instagram.com/aldokuntuludun?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@brothirteen?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul> 
+                </div>
+                <h2>Ahmad Aldo Maulana</h2>
+                <h3>Backend Developer</h3>
+                <p>Mengembangkan server dan database agar sistem bekerja dengan baik dan efisien.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock  %}

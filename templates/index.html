@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock title %}</title>
+    {% include "snippets/style.html" %}
+  </head>
+  <body class="{% block body_class %}{% endblock body_class %}"> 
+    {% include "snippets/navbar.html" %}
+    {% block gambar %}{% endblock gambar %}
+      <div class="content">
+            <!-- booklist -->
+      {% block content %} 
+      {% endblock content %}
+      {% include 'snippets/bookdetail.html' %}
+    </div>
+    </div>
+    <!-- footer -->
+    {% include "snippets/footer.html" %}
+    {% include 'snippets/script.html' %}
+      
+  </body>
+</html>

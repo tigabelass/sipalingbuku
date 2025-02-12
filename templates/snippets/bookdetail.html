@@ -1,0 +1,27 @@
+{% load static %}
+
+<!-- Modal untuk Detail Buku -->
+<div class="modal fade" id="bookDetailModal" tabindex="-1" aria-labelledby="bookDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookTitle">Judul Buku</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <img id="bookThumbnail" class="img-fluid" alt="Cover">
+            </div>
+            <div class="col-md-8">
+              <p><strong>Penulis:</strong> <span id="bookAuthors"></span></p>
+              <p><strong>Deskripsi:</strong></p>
+              <p id="bookDescription"></p>
+              <p><strong>Tanggal Terbit:</strong> <span id="bookPublishedDate"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

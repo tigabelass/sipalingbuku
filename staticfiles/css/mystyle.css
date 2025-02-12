@@ -1,0 +1,290 @@
+/* === GLOBAL === */
+html {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+    width: 0; 
+}
+
+body {
+    padding-top: 50px;
+}
+.team-page ul, 
+.about-page ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0a500 !important;
+}
+
+/* ==================== SEARCH PAGE ==================== */
+.search-page .search {
+    background-image: url("/static/img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 680px;
+}
+
+.search-page .logosearch {
+    display: flex;
+    justify-content: center;
+}
+
+.search-page .container-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 450px;
+}
+
+.search-page .box {
+    height: 50px;
+    width: 70%;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #333;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: center;
+}
+
+.search-page .box:hover input {
+    width: 80%;
+}
+
+.search-page .box input {
+    width: 0;
+    outline: transparent;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: #333;
+    color: #fff;
+}
+
+.search-page #search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-page .gohome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .text-footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer .text-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .linkfooter {
+    margin-top: 20px;
+}
+
+footer .linkfooter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .linkfooter p {
+    margin: 5px 0;
+}
+
+footer .linkfooter a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .linkfooter a:hover {
+    color: #f0a500;
+}
+
+footer .footerContainer {
+    margin-top: 20px;
+}
+
+footer .socialicons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .socialicons a:hover {
+    color: #f0a500;
+}
+
+footer .futer2 p {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsif Footer */
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer .text-footer, footer .linkfooter, footer .footerContainer {
+        flex: 1;
+        padding: 10px;
+    }
+
+    footer .footerContainer {
+        text-align: right;
+    }
+}
+
+/* ==================== OUR TEAM ==================== */
+.team-page .team {
+    padding: 80px 0;
+    color: wheat;
+    text-align: center;
+}
+
+.team-page .section-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.team-page .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.team-page .profile {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-page .profile:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.team-page .img-box {
+    position: relative;
+}
+
+.team-page .img-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid wheat;
+}
+
+.team-page ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.team-page ul li {
+    margin: 0 5px;
+}
+
+.team-page ul li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.team-page ul li a:hover {
+    color: #f8d210;
+}
+
+/* Animasi saat masuk */
+.team-page .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.team-page .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== ABOUT PAGE ==================== */
+.about-page .about {
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.about-page .section-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-page .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-page .about img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-page ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.about-page ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-page ul li strong {
+    color: #fff;
+}

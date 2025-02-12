@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}
+{% include "snippets/style.html" %}
+{% endblock %}
+{% block title %}Sipalingbuku{% endblock title %}
+
+{% block gambar %}
+{% include 'snippets/carousel.html' %}
+{% endblock gambar %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mt-3">Rekomendasi Buku Berdasarkan Genre</h2>
+    {% for genre, books in booksby_genre.items %}
+    <h3>{{ genre|title }}</h3>
+    <div class="row">
+        {% for book in books %}
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ book.thumbnail }}" class="card-img-top book-image" alt="Cover" data-title="{{ book.title }}" data-authors="{{ book.authors|join:', ' }}" data-description="{{ book.description }}">
+                <div class="card-body p-2">
+                    <h6 class="card-title">{{ book.title }}</h6>
+                    <small class="text-muted">{{ book.authors|join:', ' }}</small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+{% endblock %}

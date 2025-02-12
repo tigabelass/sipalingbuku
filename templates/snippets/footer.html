@@ -1,0 +1,24 @@
+{% load static %}
+
+<footer>
+    <div class="text-footer">
+        <img src="{% static 'img/logo.png' %}" height="180px" alt="logo">     
+        <p>Copyright &copy;2025 Book Recommender. All rights reserved</p>
+        <p>Data buku diperoleh dari Google Books API</p>
+    </div>
+    <div class="linkfooter">
+        <h3>Quick Links</h3>
+        <p><a href="{% url 'home' %}">Home</a></p>
+        <p><a href="{% url 'about' %}">About Me</a></p>
+        <p><a href="{% url 'ourteam' %}">Our Team</a></p>
+    </div>
+    <div class="footerContainer">
+        <div class="socialicons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://saweria.co/widgets/qr?streamKey=630d79a6719d847eb578ebb56719ba91"><i class="fa-solid fa-money-bill-1-wave"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <div class="futer2">
+    <p>Website ini dibuat untuk memberikan rekomendasi buku berdasarkan berbagai genre</p>
+  </div>
+</footer>
