@@ -7,16 +7,19 @@ html {
 body::-webkit-scrollbar {
     width: 0; 
 }
-
-body {
-    padding-top: 50px;
+body{
+    padding-top: 60px;
 }
+
 .team-page ul, 
 .about-page ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
+}
+.search-page{
+    padding: 0;
 }
 
 /* ===== NAVBAR ===== */
@@ -45,7 +48,13 @@ body {
     background-position: bottom;
     height: 680px;
 }
-
+.search-page .input-user{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid red;
+}
 .search-page .logosearch {
     display: flex;
     justify-content: center;
@@ -54,7 +63,6 @@ body {
 .search-page .container-input {
     display: flex;
     justify-content: center;
-    margin-bottom: 450px;
 }
 
 .search-page .box {

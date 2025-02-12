@@ -8,10 +8,14 @@
     {% include "snippets/style.html" %}
   </head>
   <body class="{% block body_class %}{% endblock body_class %}"> 
-    {% include "snippets/navbar.html" %}
+    
+    {% block nav %}
+      
+    {% endblock nav %}
+      
     {% block gambar %}{% endblock gambar %}
-      <div class="content">
-            <!-- booklist -->
+    <div class="content">
+      <!-- booklist -->
       {% block content %} 
       {% endblock content %}
       {% include 'snippets/bookdetail.html' %}

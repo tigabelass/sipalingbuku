@@ -3,24 +3,29 @@
 
 {% block title %}Search{% endblock title %}
 {% block body_class %}search-page{% endblock %}
+{% block nav %}
+{% include "snippets/navbar.html" %}
+{% endblock  %}
 
 
 {% block content %}
 <div class="search" id="myBodyContent">
-  <div class="logosearch">
-    <img src="{% static 'img/logo.png' %}" width="45%" alt="logo">
-  </div>
-  <div class="container-input">
-    <div class="box">
-      <form id="search-form">
-        <input type="text" id="query" name="query" placeholder="Search...">
-        <button type="submit" class="btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
+  <div class="input-user">
+    <div class="logosearch">
+      <img src="{% static 'img/logo.png' %}" width="50%" alt="logo">
+    </div>
+    <div class="container-input">
+      <div class="box">
+        <form id="search-form">
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+  </div>
 <h3 class="d-flex justify-content-center align-content-center m-3">Hasil Pencarian</h3>
 <div id="results" class="container">
 </div>
