@@ -179,7 +179,7 @@ footer .futer2 p {
 /* ==================== OUR TEAM ==================== */
 .team-page .team {
     padding: 80px 0;
-    color: wheat;
+    color: white;
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ footer .futer2 p {
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 3px solid wheat;
+    border: 3px solid white;
 }
 
 .team-page ul {
